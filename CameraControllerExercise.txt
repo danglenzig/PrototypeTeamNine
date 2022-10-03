@@ -1,0 +1,19 @@
+At the top, right after the class delaration...
+
+(1) [SerializeField] your Cinemachine virtual cameras from the scene hierarchy into the controller
+(2) Create a Cinemachine camera list
+(3) Create an integer variable called "myIndex" (or whatever), which will point to elements in the camera list
+(4) create a Keyboard variable
+
+Inside the Start() function...
+
+(5) Assign the current keyboard to your Keyboard variable
+(6) add all the cameras into the camera list
+
+Inside the Update() function.....
+
+(7) Create an if() statement that cycles through the camera list when you hit the space key. (hint, use that index variable for this). 
+
+(8) Create a seperate function called SwitchCamera() (or whatever) at the bottom of the script, which you activate like "SwitchCamera(newActiveCamera)"
+
+
